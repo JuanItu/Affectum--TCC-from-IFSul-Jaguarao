@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CorFundo"
+    tools:context=".view.Registro">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Affectum"
+        android:fontFamily="@font/nixie_one"
+        android:textColor="@color/CorLetra"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/text_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154dp"
+        android:layout_above="@id/text_aniversario"
+        android:backgroundTint="@color/CorLetra"
+        android:ems="10"
+        android:hint="Nome"
+        android:fontFamily="@font/nixie_one"
+        android:textSize="25sp"
+        android:textColorHint="@color/CorLetra"
+        android:textColor="@color/CorLetra"
+        />
+    <EditText
+        android:id="@+id/text_aniversario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/CorLetra"
+        android:ems="10"
+        android:hint="Data Aniversario"
+        android:fontFamily="@font/nixie_one"
+        android:textSize="25sp"
+        android:textColorHint="@color/CorLetra"
+        android:textColor="@color/CorLetra"
+        />
+
+    <Button
+        android:id="@+id/botaoCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/CorSecundaria"
+        android:layout_below="@id/text_aniversario"
+        android:hint="Cadastrar"
+        android:fontFamily="@font/nixie_one"
+        android:textColorHint="@color/CorLetra"
+        android:textSize="16dp"
+        />
+
+
+
+</RelativeLayout>

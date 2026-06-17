@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CorFundo">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/affectum"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#79B8B3"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Affectum"
+                android:fontFamily="@font/nixie_one"
+                android:textColor="#ECF6F6"
+                android:textSize="45dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/affectumImagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/affectum"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/affectum"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/affectumBotoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/affectumImagem"
+            android:padding="16dp"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/emocao"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#90CFCD"
+                android:textColor="@color/CorLetra"
+                android:gravity="center"
+                android:text="Emoções"
+                android:textSize="35sp"
+                android:fontFamily="@font/nixie_one"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/salvos"
+                android:layout_width="330dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/emocao"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Salvos"
+                android:textColor="@color/CorLetra"
+                android:textSize="35sp"
+                android:fontFamily="@font/nixie_one"
+                android:textAlignment="center"
+                android:backgroundTint="#90CFCD"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
